@@ -19,3 +19,11 @@ vim vars
 #export KEY_EMAIL="test"
 #export KEY_OU="test"
 ```
+change to root
+```shell
+sudo su
+cd /usr/share/easy-rsa
+source vars
+./clean-all
+
+```
