@@ -9,7 +9,7 @@ cp /etc/ssl/openssl.cnf /usr/share/easy-rsa
 #setting config
 #backup
 cp vars vars.bk
-#change co
+#change config
 vim vars
 #change something like this
 #export KEY_COUNTRY="TW"
@@ -25,5 +25,14 @@ sudo su
 cd /usr/share/easy-rsa
 source vars
 ./clean-all
-
+```
+# if error edit vars
+```shell
+#change this
+export KEY_CONFIG="$EASY_RSA/whichopensslcnf $EASY_RSA"
+#to
+export KEY_CONFIG="$EASY_RSA/openssl-1.0.0.cnf"
+```
+```shell
+./build-key-server server
 ```
