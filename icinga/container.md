@@ -25,3 +25,7 @@ if mysql show No directory, logging in with HOME=/ try
 ```bash
 chown -R mysql:mysql /var/lib/mysql /var/run/mysqld
 ```
+there ars some default commadn in here
+```bash
+/usr/share/icinga2/include/command-plugins.conf
+```
