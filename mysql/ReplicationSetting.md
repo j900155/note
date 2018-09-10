@@ -1,4 +1,4 @@
-#Master
+## Master
 setting /etc/my.cnf add
 ```shell
 server-id=1
@@ -11,7 +11,7 @@ show master status \G;
 ```
 get File Postion
 
-#Slave
+## Slave
 setting /etc/my.cnf add
 ```shell
 server-id=3
@@ -24,7 +24,7 @@ CHANGE MASTER TO MASTER_HOST="host ip" ,MASTER_USER="user" ,MASTER_PASSWORD=”p
 show slave status \G;
 ```
 
-#clean bin log
+## clean bin log
 ```shell
 reset master;
 ```
