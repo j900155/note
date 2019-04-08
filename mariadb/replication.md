@@ -1,4 +1,4 @@
-#setting
+# setting
 ## configuring the master
 ### add config to setting file
 default setting file path /etc/mysql/my.cnf
@@ -41,8 +41,8 @@ CHANGE MASTER "connectionNmae" TO
   MASTER_USE_GTID = slave_pos;
 ```
 
-#TODO
-need to test for multi master replication
-	replicate_do_db #select db
-	replicate-rewrite-db # change db name  setting in my.cnf?
+# TODO
+need to test for multi master replication  
+	replicate_do_db #select db  
+	replicate-rewrite-db # change db name  setting in my.cnf?  
 ref <https://mariadb.com/kb/en/library/setting-up-replication/>
