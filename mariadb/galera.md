@@ -17,7 +17,6 @@ wsrep_cluster_name="example_cluster"
 wsrep_cluster_address="gcomm://IP.node1,IP.node2,IP.node3"
 wsrep_sst_method=rsync
 ```
-<<<<<<< HEAD
 
 ## start cluster
 ### first node
@@ -27,10 +26,7 @@ galera_new_cluster
 ### other node
 #TODO
 galera setting in /etc/mysql/conf.d/galera.cnf ?
-=======
-# TODO
-galera setting in /etc/mysql/conf.d/galera.cnf ?  
->>>>>>> 607ec1d44dff19d43f43d81cc5b49f20aabe9af0
+
  
 ref <https://mariadb.com/kb/en/library/what-is-mariadb-galera-cluster/>  
 ref <https://mariadb.com/kb/en/library/getting-started-with-mariadb-galera-cluster/>  
