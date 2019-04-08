@@ -17,6 +17,13 @@ wsrep_cluster_name="example_cluster"
 wsrep_cluster_address="gcomm://IP.node1,IP.node2,IP.node3"
 wsrep_sst_method=rsync
 ```
+
+## start cluster
+### first node
+```ssh
+galera_new_cluster
+```
+### other node
 #TODO
 galera setting in /etc/mysql/conf.d/galera.cnf ?
  
