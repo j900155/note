@@ -17,16 +17,18 @@ wsrep_provider_options="gcache.size=300M; gcache.page_size=300M"
 wsrep_cluster_name="example_cluster"
 wsrep_cluster_address="gcomm://IP.node1,IP.node2,IP.node3"
 wsrep_sst_method=rsync
-wsrep_on=ON
+wsrep_on=ON #set galera work
 ```
 
 ## start cluster
 ### first node
-```ssh
+```shell
 galera_new_cluster
 ```
 ### other node
-#TODO
+```shell
+service mysql start
+```
 
  
 ref <https://mariadb.com/kb/en/library/what-is-mariadb-galera-cluster/>  
