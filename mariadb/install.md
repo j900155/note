@@ -28,6 +28,9 @@ sudo apt-get install mariadb-server mariadb-client
 # note
 need to set bind-address in /etc/mysql/my.cnf
 
+#using docker
+https://hub.docker.com/_/mariadb 
+
 ref <https://mariadb.com/kb/en/library/installing-mariadb-deb-files/>
 
 
