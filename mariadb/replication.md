@@ -27,6 +27,7 @@ default setting file path /etc/mysql/my.cnf
 log-bin
 serber_id=2 #need bigger then 1
 log-basename=master1
+#replicate-rewrite-db="dbname1->dbname1test"
 ```
 setting in slave mysql
 ```
@@ -44,5 +45,5 @@ CHANGE MASTER "connectionNmae" TO
 # TODO
 need to test for multi master replication  
 	replicate_do_db #select db  
-	replicate-rewrite-db # change db name  setting in my.cnf?  
+	
 ref <https://mariadb.com/kb/en/library/setting-up-replication/>
