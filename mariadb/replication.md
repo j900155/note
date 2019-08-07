@@ -31,7 +31,7 @@ log-basename=master1
 ```
 setting in slave mysql
 ```
-CHANGE MASTER "connectionNmae" TO
+CHANGE MASTER  TO
   MASTER_HOST='master.domain.com',
   MASTER_USER='replication_user',
   MASTER_PASSWORD='bigs3cret',
@@ -39,11 +39,41 @@ CHANGE MASTER "connectionNmae" TO
   MASTER_LOG_FILE='mariadb-bin.000096',
   MASTER_LOG_POS=568,
   MASTER_CONNECT_RETRY=10,
-  MASTER_USE_GTID = slave_pos;
 ```
-
+## muitl master  
+### for master 1 
+ ```
+CHANGE MASTER "Master1connectionName" TO
+  MASTER_HOST='master.domain.com',
+  MASTER_USER='replication_user',
+  MASTER_PASSWORD='bigs3cret',
+  MASTER_PORT=3306,
+  MASTER_LOG_FILE='mariadb-bin.000096',
+  MASTER_LOG_POS=568,
+  MASTER_CONNECT_RETRY=10,
+```
+### for master 2
+ ```
+CHANGE MASTER "Master2connectionName" TO
+  MASTER_HOST='master.domain.com',
+  MASTER_USER='replication_user',
+  MASTER_PASSWORD='bigs3cret',
+  MASTER_PORT=3306,
+  MASTER_LOG_FILE='mariadb-bin.000096',
+  MASTER_LOG_POS=568,
+  MASTER_CONNECT_RETRY=10,
+```
+### start slave
+```
+start slave 'connectionName'
+```
+### show slave status
+###
+```
+show slave 'connectionName' status
+```
+###
 # TODO
-need to test for multi master replication  
-	replicate_do_db #select db  
+	binlog_do_db=db1 # select db
 	
 ref <https://mariadb.com/kb/en/library/setting-up-replication/>
