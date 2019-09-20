@@ -1,7 +1,6 @@
-:resize
-:vertical resize
+resize  
+vertical resize
 
-:set nu
-:set tabstop=4
-:set 
-syntax on
+set nu  
+set tabstop=4  
+syntax on  
